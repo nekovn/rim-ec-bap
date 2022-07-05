@@ -1,0 +1,6 @@
+id,customer_type,surname,name,surname_kana,name_kana,full_name,full_name_kana,gender,birthday_year,birthday_month,birthday_day,zip,prefcode,addr_1,addr_2,addr_3,addr,tel,email,password,corporate_name,position,is_login_prohibited,is_locked,can_dm_send,can_mailmagazine_send,remark,bcrews_customer_id,bcrew_customer_id,remember_token,email_verified_at,uuid,payment_member_id,created_by,created_at,updated_by,updated_at,is_deleted
+1000000001,1,福岡,太郎,フクオカ,タロウ,福岡 太郎,フクオカ タロウ,1,1980,12,26,8120044,40,福岡市博多区,千代１－２－３,３F,,090-1111-2222,aa@bb.com,$2y$10$SFCDfT47M4gIcT2kUYI3.uG.B7/Ejn/KXrtcOYGuz/oTDq.hvnRFu,,,0,0,1,1,"あ
+い
+う
+え
+お",,,,,4ba5163b-e355-49dd-9b41-e7a0a2a35f94,,1,2021/08/22 14:10:12,1,2021/09/02 14:08:52,0

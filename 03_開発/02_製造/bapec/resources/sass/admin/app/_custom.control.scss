@@ -1,0 +1,10 @@
+
+.custom-file-label {
+    top:inherit;
+    text-align: left;
+    color: #000;
+    justify-content: initial !important;
+}
+.custom-file-label::after {
+    height: calc(1.5em + 0.73rem);
+}

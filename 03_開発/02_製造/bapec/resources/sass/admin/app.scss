@@ -1,0 +1,24 @@
+// Import styles(coreui、font css)
+@import "~@sass-admin/app/variables";
+@import "node_modules/@coreui/coreui/scss/coreui";
+@import "node_modules/@coreui/coreui/scss/variables/colors";
+
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+
+// プロジェクト共通 Resource
+@import "~@sass/style/button";
+@import "~@sass/style/control";
+@import "~@sass/style/validator";
+@import "~@sass/style/page";
+@import "~@sass/style/service/calendar.service";
+@import "~@sass/style/service/animate.service";
+
+// 管理サイト共通 Resource
+@import "~@sass-admin/app/custom.control";
+@import "~@sass-admin/app/custom";
+@import "~@sass-admin/app/modalmessage";
+@import "~@sass-admin/app/notifications";
+@import "~@sass-admin/app/variables";
+@import "~@sass-admin/page/page";

@@ -1,0 +1,14 @@
+@import '~@sass/style/template/simple.crud.page';
+@import "~@sass/style/service/grid.service";
+
+#users-grid .ag-header {
+  .ag-header-cell:nth-child(1) {
+    width: 120px;
+  }
+}
+
+#users-detail-area {
+  #user_id {
+    width: 242px;
+  }
+}

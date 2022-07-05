@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>パスワード再発行｜ログイン｜BAP-holdings</title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<link rel="stylesheet" href="css/import.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+	<div class="block_logo clearfix">
+	  <h1><a href="index.html"><img src="img/common/logo.png" alt="BAP-holdings"></a></h1>
+      <div class="right_area">
+        <ul class="snav">
+          <li><a href="login.html"><img src="img/common/icon_login.png" alt=""><p>ログイン</p></a></li>
+          <li><a href="notice.html"><span data-badge-top-right="2"><img src="img/common/icon_bell.png" alt=""><p>お知らせ</p></span></a></li>
+          <li><a href="favorite.html"><img src="img/common/icon_heart.png" alt=""><p>お気に入り</p></a></li>
+          <li><a href="cart.html"><img src="img/common/icon_cart.png" alt=""><p>カート</p></a></li>
+        </ul>
+        <div class="search_area">
+          <form method="get" action="http://www.google.co.jp/search" target="_blank">
+            <input type="text" name="q" size="20" maxlength="20" value="" placeholder="商品を探す">
+            <input type="submit" name="btng" value="検索">
+            <input type="hidden" name="hl" value="ja">
+          </form>
+        </div>
+      </div>
+	  <p class="menu_sp sp"><a id="panel-btn"><span id="panel-btn-icon">&nbsp;</span></a></p>
+	</div>
+	<nav>
+      <ul>
+        <li><a href="registration.html">新規会員登録</a></li>
+        <li><a href="products.html">商品一覧</a></li>
+        <li><a href="catalog.html">ヘアカタログ</a></li>
+        <li><a href="guide.html">お買い物ガイド</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+	  
+	<div id="panel" class="menu sp">
+	  <div class="menu-box" style="display:none;">
+		<div class="menu-box-inner">
+		  <div class="menu-box-list">
+		    <ul>
+			  <li><a href="">ホーム</a></li>
+			  <li><a href="registration.html">新規会員登録</a></li>
+			  <li><a href="products.html">商品一覧</a></li>
+			  <li><a href="catalog.html">ヘアカタログ</a></li>
+			  <li><a href="guide.html">お買い物ガイド</a></li>
+			  <li><a href="company.html">会社概要</a></li>
+			  <li><a href="faq.html">よくある質問</a></li>
+			  <li><a href="contact.html">お問い合わせ</a></li>
+              <li><a href="privacy.html">プライバシーポリシー</a></li>
+              <li><a href="law.html">特定商取引法に関する表記</a></li>
+		    </ul>
+		  </div>
+		  <div class="search_area">
+		    <form method="get" action="http://www.google.co.jp/search" target="_blank">
+		      <input type="text" name="q" size="15" maxlength="15" value="">
+		      <input type="submit" name="btng" value="検索">
+		      <input type="hidden" name="hl" value="ja">
+		    </form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </header>
+  
+  <article id="login" class="low">
+  
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="password.html">ログイン</a></li>
+        <li>パスワード再発行</li>
+      </ul>
+    </div>
+
+  
+    <div id="main">
+	  <section>
+	    <h2>PASSWORD RESET</h2>
+	    <p class="jp">パスワード再発行</p>
+        <p class="txt_forget">ご登録いただいているメールアドレスを入力の上、送信ボタンを押してください。<br class="pc">
+        パスワード再設定用のURLが記載されたメールをお送りいたします。</p>
+        <dl>
+		  <dt>メールアドレス</dt>
+		  <dd><input type="text" name="メールアドレス" value="" class="text01"></dd>
+		</dl>
+		<div class="btn_area">
+		  <input class="button" type="submit" name="submit" value="送信">
+		</div>
+	  </section>
+    </div>
+ 
+    <div id="side">
+      <h3>アイテムを探す</h3>
+      <ul>
+        <li><a href="">特集</a></li>
+        <li><a href="">オススメ</a></li>
+        <li><a href="">ブランド一覧</a></li>
+        <li><a href="">ランキング</a></li>
+        <li><a href="">新着アイテム</a></li>
+      </ul>
+      <h3>カテゴリ</h3>
+      <ul>
+        <li><a href="">シャンプー</a></li>
+        <li><a href="">コンディショナー</a></li>
+        <li><a href="">トリートメント</a></li>
+        <li><a href="">ヘアマスク</a></li>
+        <li><a href="">ヘアオイル</a></li>
+        <li><a href="">ヘアアイロン</a></li>
+        <li><a href="">ドライヤー</a></li>
+        <li><a href="">ヘアブラシ</a></li>
+      </ul>
+    </div>
+ 
+  </article>
+  
+  <div class="information">
+    <div class="inner">
+      <h2>INFORMATION</h2>
+      <p class="jp">ご案内</p>
+      <ul>
+	    <li>
+          <a href="">
+            <p class="icon"><img src="img/common/icon_delivery.png" alt="配送方法"></p>
+            <h3>配送方法</h3>
+          </a>
+          <p class="txt">説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文</p>
+        </li>
+	    <li>
+          <a href="">
+            <p class="icon"><img src="img/common/icon_postage.png" alt="送料"></p>
+            <h3>送料</h3>
+          </a>
+          <p class="txt">説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文</p>
+        </li>
+	    <li>
+          <a href="">
+            <p class="icon"><img src="img/common/icon_pay.png" alt="お支払い方法"></p>
+            <h3>お支払い方法</h3>
+          </a>
+          <p class="txt">説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文</p>
+       </li>
+	    <li>
+          <a href="">
+            <p class="icon"><img src="img/common/icon_returns.png" alt="返品・交換"></p>
+            <h3>返品・交換</h3>
+          </a>
+          <p class="txt">説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文・説明文</p>
+       </li>
+	  </ul>
+      <p class="btn"><a href="">お買い物ガイドはこちら</a></p>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="block01">
+      <div class="inner">
+        <ul class="login clearfix">
+          <li><a href="login.html">ログイン</a></li>
+          <li><a href="registration.html">新規会員登録</a></li>
+        </ul>
+	    <ul class="sns">
+	      <li><a href="" target="_blank" class="alpha"><img src="img/common/icon_facebook.png" alt="facebook"></a></li>
+	      <li><a href="" target="_blank" class="alpha"><img src="img/common/icon_insta.png" alt="instagram"></a></li>
+	      <li><a href="" target="_blank" class="alpha"><img src="img/common/icon_youtube.png" alt="youtube"></a></li>
+	      <li><a href="" target="_blank" class="alpha"><img src="img/common/icon_twitter.png" alt="twitter"></a></li>
+	    </ul>
+      </div>
+    </div>
+    <div class="block02">
+	  <ul class="fnav">
+        <li><a href="products.html">商品一覧</a></li>
+        <li><a href="catalog.html">ヘアカタログ</a></li>
+        <li><a href="guide.html">お買い物ガイド</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+	    <li><a href="privacy.html">プライバシーポリシー</a></li>
+	    <li><a href="law.html">特定商取引法に関する表記</a></li>
+	  </ul>
+      <h1><img src="img/common/logo.png" alt="BAP-holdings"></h1>
+      <p class="copy">&copy; Beauty Artist Planning Co.,Itd All Rights Reserved.</p>
+	</div>
+  </footer>
+  <div id="pageTop"><a href="#wrapper" class="alpha"><img src="img/common/btn_pagetop.png" alt="ページの先頭へ戻る"></a></div>
+</div>
+
+</body>
+</html>

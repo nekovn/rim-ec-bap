@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "allowSyntheticDefaultImports": false,
+        "baseUrl": "./",
+        "paths":{
+        "@js/*": ["resources/js/*"],
+        }
+
+    },
+    "exclude": ["node_modules","public"]
+}

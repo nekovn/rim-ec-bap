@@ -1,0 +1,50 @@
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  border-color: #F2DEDE !important;
+  background-color: #F2DEDE !important;
+}
+
+input.parsley-error.form-control:focus,
+select.parsley-error.form-control:focus,
+textarea.parsley-error.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(242, 222, 222, 0.25);
+  border-color: #F2DEDE;
+  background-color: #F2DEDE;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: #e55353;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+.alert {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.alert p {
+  margin: 10px 0 0 20px;
+}
+
+.alert-danger {
+  border-color: red;
+  color: red;
+}

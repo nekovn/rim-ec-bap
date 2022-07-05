@@ -1,0 +1,68 @@
+// input.parsley-success,
+// select.parsley-success,
+// textarea.parsley-success {
+//   color: $success;
+//   background-color: #DFF0D8;
+//   border: 1px solid #D6E9C6;
+// }
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  border-color: #F2DEDE;
+  background-color: #F2DEDE;
+  &.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(242, 222, 222, 0.25);
+    border-color: #F2DEDE;
+    background-color: #F2DEDE;
+  }
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: $danger;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+/* .ui-tooltip {
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 200px;
+    color: white;
+    font: bold 12px "Helvetica Neue", Sans-Serif;
+    background: black;
+}
+
+.ui-tooltip:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid black;
+}
+
+.ui-tooltip p {
+    margin: 0;
+    padding: 0;
+} */

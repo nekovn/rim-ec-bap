@@ -1,0 +1,41 @@
+@import "~@sass/style/service/grid.service";
+
+#csv_output-grid {
+    height: 320px;
+}
+
+// #csv_output-grid .csv_output_paramdata {
+//     width:240px;
+// }
+#csv_output-grid .ag-cell.paramdata-cell span{
+    width:100%;
+}
+#csv_output-template-grid {
+    height: 240px;
+    // overflow-y: auto;
+}
+
+#csv_output-btn-template-select {
+    font-size:small
+}
+
+#csv_output-btn-template-upload {
+    font-size: small;
+}
+
+#csv_output-btn-joken-output {
+    font-size: small;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+// #csv_output-contents-table {
+//     width: 620px;
+// }
+
+#csv_output-contents-table .card-body {
+    height: auto;
+    max-height: 570px;
+    // width: 615px;
+    overflow: auto;
+}

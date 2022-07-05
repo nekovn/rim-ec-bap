@@ -1,0 +1,19 @@
+﻿"id","name","href","icon","slug","title_id","parent_id","program_cd","sequence"
+1,"ダッシュボード","admin/","fas fa-tachometer-alt","link",,,"dashboard",1
+10,"顧客管理",,"fas fa-users","dropdown",,,,10
+11,"顧客一覧","admin/customers",,"link",,10,"customers",11
+20,"受注管理",,"fas fa-shopping-cart","dropdown",,,,20
+21,"受注一覧","admin/orders",,"link",,20,"order",21
+30,"出荷管理",,"fas fa-truck","dropdown",,,,30
+31,"出荷一覧","admin/ships",,"link",,30,"ships",31
+40,"商品管理",,"fas fa-boxes","dropdown",,,,40
+41,"商品一覧","admin/goods",,"link",,40,"goods",41
+80,"マスタ管理",,"fas fa-cogs","dropdown",,,,80
+81,"ショップ基本情報","admin/shopinfo",,"link",,80,"shopinfo",80
+82,,,,,,,,
+90,"システム設定",,"fas fa-tools","dropdown",,,,90
+91,"ユーザーマスタ","admin/users",,"link",,90,"users",91
+92,"コードマスタ","admin/codes",,"link",,90,"codes",92
+1000,"menu",,"fas fa-folder","dropdown",,,,1000
+1001,"menu1","admin/",,"link",,1000,"sandobx",1001
+1002,"menu2","admin/","","link",,1000,"sandbox",1002

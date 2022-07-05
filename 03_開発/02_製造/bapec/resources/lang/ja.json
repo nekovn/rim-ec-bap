@@ -1,0 +1,14 @@
+{
+  "Reset Password": "パスワードの再設定",
+  "E-Mail Address": "メールアドレス",
+  "Send Password Reset Link": "送信",
+  "passwords.throttled": "前回送信してから時間が経過しておりません。　１分経過してから再度実行してください。",
+  "Password": "パスワード",
+  "Confirm Password": "パスワード（確認用）",
+
+  "Verify Your Email Address": "ユーザ登録を完了してください",
+  "A fresh verification link has been sent to your email address.": "新しいリンクをあなたのメールアドレスに送信しました。",
+  "Before proceeding, please check your email for a verification link.": "メールに記載されているリンクをクリックして、登録手続きを完了してください。",
+  "If you did not receive the email": "メールが届いていなければ、",
+  "click here to request another": "こちらをクリックして再送信してください。"
+}

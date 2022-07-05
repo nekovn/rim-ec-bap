@@ -1,0 +1,40 @@
+/** ag-grid カスタマイズ */
+.grid {
+  width: 100%;
+
+  .ag-header-cell {
+    display: table;
+  }
+  
+  .ag-header {
+    height: 43px;
+  }
+
+  .ag-header-cell .grid-header {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .ag-header-cell.text-center .ag-header-cell-label {
+    justify-content: center;
+  }
+
+  .ag-cell {
+    line-height: 26px;
+    input[type='checkbox'] {
+      margin-top: 2px; 
+    }
+  }
+}
+
+.pagination {
+  margin: 10px auto;
+}
+
+//grid件数表示
+div.tbl_length label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}

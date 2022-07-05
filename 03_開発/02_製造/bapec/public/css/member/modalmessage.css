@@ -1,0 +1,52 @@
+
+#messagemodal.modal {
+  z-index: 9999;
+}
+#messagemodal .modal-body {
+  padding: 0.5rem;
+  height: 70px;
+}
+
+.modal-outline-dark .ui-widget-header {
+  color: white;
+  background-color:#636f83 ;
+}
+.modal-info .ui-widget-header {
+  background: #0080ff;
+  color: white;
+}
+.modal-danger .ui-widget-header {
+  background: #e55353;
+  color: white;
+}
+.modal-warning .ui-widget-header {
+  background: #f9b115;
+  color: white;
+}
+
+
+.ui-dialog .ui-dialog-content {
+  padding: .1em .1em;
+}
+
+.ui-widget-header {
+  background: black;
+  color: white;
+  font-weight: normal;
+  font-size: 1.09rem;
+}
+
+.ui-widget.ui-widget-content {
+  border: 2px solid #4f5d73;
+}
+
+.ui-dialog {
+  z-index: 1032;
+}
+.ui-dialog .ui-dialog-titlebar {
+  padding: .2em 1em;
+}
+
+.ui-widget-overlay {
+  opacity: 0.7;
+}

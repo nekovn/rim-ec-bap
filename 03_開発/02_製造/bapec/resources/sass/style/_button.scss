@@ -1,0 +1,50 @@
+
+.clearable:not(:disabled):not(:read-only) {
+	padding: 3px 18px 3px 4px;
+	background: url("/images/clearable.png") no-repeat right -10px center;
+	/* USE the same right padding in jQ! */
+	transition: background 0.4s;
+
+	&.x {
+		background-position: right 5px center;
+	}
+	&.onX {
+		cursor: pointer;
+	}
+}
+
+/* ボタン定義 */
+button > i,
+.btn > i {
+	margin-right: 0.25rem;
+	padding-right: 20px;
+}
+.btn-search {
+	width: 120px;
+}
+
+.button {
+	padding: 0.5rem 0;
+	border: 1px solid transparent;
+	color: #fff;
+	background-color: #29388f;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1rem;
+
+	-webkit-appearance: none;
+	&:disabled {
+		cursor: not-allowed;
+	}
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+	&-gray {
+		color: #333;
+		background-color: #eee;
+		&:hover {
+			color: #333;
+		}
+	}
+}

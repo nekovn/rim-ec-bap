@@ -1,0 +1,2 @@
+﻿"id","code","name","email","password","is_unusable","is_admin","remember_token","email_verified_at","created_by","created_at","updated_by","updated_at","is_deleted"
+1,"admin","システム管理者","admin@elseif.jp","$2y$10$i833dPYc94AwEhwq5gsNVeDK.LA8uEJcexxOoRBw9MPHAipF/cBqu",0,1,"K4Mpg3G2McCUomUNGk8xZsSpQCOCzpduMA1oJntcbqqEv4uwiD6dMY0AZ4wk",,0,2021/08/03 9:56:45,1,2021/08/26 20:39:51,0

@@ -1,0 +1,47 @@
+@import '~@sass/style/template/simple.crud.page';
+@import "~@sass/style/service/grid.service";
+
+#customers-grid .ag-header {
+  .ag-header-cell:nth-child(1) {
+    width: 120px;
+  }
+}
+
+#customers-detail-area {
+  #customer_id {
+    width: 242px;
+  }
+  .point {
+    width: 145px;
+  }
+  .customer_rank {
+    width: 145px;
+  }
+}
+
+.birthday-year,
+.birthday-month,
+.birthday-day {
+  width: 100px;
+}
+
+.birth_label {
+  line-height: 35px;
+  margin: 0 5px;
+}
+
+#bcrews_customer_id_status,
+#bcrew_customer_id_status {
+  line-height: 35px;
+  font-weight: bold;
+}
+
+#bcrew_customer_id_wrapper {
+  padding-top: 6px;
+  width: 100%;
+}
+
+#bcrews_customer_id_wrapper {
+  padding-top: 8px;
+  width: 100%;
+}

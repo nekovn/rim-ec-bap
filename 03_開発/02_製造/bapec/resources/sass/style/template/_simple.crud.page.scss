@@ -1,0 +1,25 @@
+@import "~@sass/style/service/grid.service";
+
+.detail-title {
+  background: #396fb7;
+  color: white;
+  font-weight: normal;
+}
+
+.content-area {
+  position: relative;
+}
+.detail-area {
+  position: absolute;
+  //top: 25px;//#{$header-height}-5px;
+  width: 100%;
+}
+.detail-area .btn-area{
+  display: flex;
+  justify-content: space-between;
+}
+
+.animate__animated {
+  animation-duration: 0.2s;
+}
+

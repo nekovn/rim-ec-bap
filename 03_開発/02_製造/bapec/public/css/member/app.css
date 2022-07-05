@@ -1,0 +1,82 @@
+
+.no-image {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-top:50%;
+}
+
+.no-image-inner {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.no-image-inner:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #333;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    text-align: center;
+    content: "NO IMAGE";
+    transform: translateY(-50%);
+}
+
+.d-none {
+    display: none;
+}
+.d-inline {
+    display: inline!important;
+}
+
+.modal .dialog-message {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+/**
+ * base.css override
+ */
+ /*+
+article#member-register #main,
+article#login #main {
+    margin: 0 auto;
+    float: initial !important;
+}
+
+.products_list figure img {
+    background-color: transparent;
+    object-fit: contain;
+    width: 100%;
+    max-height: 220px;
+}
+.products_detail figure img {
+    background-color: transparent;
+    object-fit: contain;
+    width: 100%;
+    max-height: 400px;
+}
+.table_cart td img {
+    background-color: transparent;
+    object-fit: contain;
+    width: 100%;
+    max-height: 80px;
+}
+#order-confirm td img {
+    background-color: transparent;
+    object-fit: contain;
+    width: 100%;
+    max-height: 80px;
+}
+.list_item figure img {
+    background-color: transparent;
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+}
+*/

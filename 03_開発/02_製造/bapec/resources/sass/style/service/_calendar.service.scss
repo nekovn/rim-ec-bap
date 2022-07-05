@@ -1,0 +1,27 @@
+/* FullCalendarカスタマイズ */
+.fc {
+  width: 80%;
+  margin: 0px auto;
+  height: 916px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+/* FullCalendar 当月以外の日（月カレンダーに一緒に表示される前後の月） */
+.fc-day-other {
+  .fc-daygrid-day-top, .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .fc-list-day-cushion {
+    color: grey;
+  }
+}
+/* FullCalendar 土曜日 */
+.fc-day-sat {
+  .fc-daygrid-day-top, .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .fc-list-day-cushion {
+    color: blue;
+  }
+}
+/* FullCalendar 日曜日 */
+.fc-day-sun{
+  .fc-daygrid-day-top, .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .fc-list-day-cushion {
+    color: red;
+  }
+}

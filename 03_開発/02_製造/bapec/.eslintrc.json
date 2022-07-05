@@ -1,0 +1,39 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "commonjs": true
+    },
+    "globals": {
+        "fw": false,                // アプリケーション
+        "$": false,                 // jquery
+        "ParsleyUI": false,         // parsley
+        "i18n": false,              // localization
+        "AG_GRID_LOCALE_JA": false, // ag-grid
+        "AG_GRID_LOCALE_EN": false, // ag-grid
+        "agGrid": false,            // ag-grid
+        "_": false,                 // lodash
+        "libphonenumber": false,    // libphonenumber
+        "Parsley": false,           // parsley
+        "moment": false,            // moment
+        "monthSelectPlugin": false, // flatpickr
+        "rangePlugin": false,       // flatpickr
+        "__dirname": false,         // webpack
+        "process": false            // webpack
+    },
+    "rules": {
+        // "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+        "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+        "prettier/prettier": "error",
+        "no-empty": ["error", { "allowEmptyCatch": true }]
+    }
+}

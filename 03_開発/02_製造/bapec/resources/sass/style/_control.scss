@@ -1,0 +1,146 @@
+/**
+ * htmlコントロール向けscss
+ */
+label {
+  display: inline-block;
+  margin-bottom: 0rem;
+  font-size: 0.8rem;
+}
+/* ラベル寄せ */
+label {
+  text-align: right;
+}
+/* 必須アイコン */
+label.required:after {
+  content: "必須";
+  color: #fff;
+  background-color: #e55353;
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-left: 0.5rem;
+}
+
+.input-group-append {
+  display: flex;
+}
+.input-group-text {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  color: inherit;
+  background-color: #ebedef;
+  border-color: #d8dbe0;
+}
+
+input[type='checkbox'], input[type='radio'] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type='checkbox'].form-control ,
+input[type='radio'].form-control  {
+  width: 18px;
+}
+
+@media (min-width: 768px) {
+  input[type='checkbox'] + label, input[type='radio'] + label {
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+}
+
+/** 人名 **/
+.person-name {
+  width: 405px;
+}
+/** パスワード **/
+input[type="password"] {
+  // width: 242px;
+}
+/* 郵便番号 */
+.post-code,
+input.post-code {
+  width: 110px;
+}
+/* 都道府県 */
+.pref_cd,
+select.pref_cd {
+  width: 126px;
+}
+/* 電話番号 */
+.phone-number,
+input.phone-number {
+  width: 140px;
+}
+/* 数値 */
+input[type='number'] {
+  text-align: right;
+}
+/* flatpickr Timepickr 選択項目 */
+.flatpickr-time input[type='number'] {
+  text-align: center;
+}
+/* 数値(スピンボタン非表示・Chrome, Safari) */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* 数値(スピンボタン非表示・Firefox, IE) */
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+/* 日付（年月日） */
+input[type='text'].w-date {
+  width: 110px;
+  background-color: #ffffff;
+}
+input[type='date'] {
+  width: 150px;
+}
+/* 日付（年月） */
+input[type='text'].w-month {
+  width: 80px;
+}
+.monthpicker-wrapper {
+  width: 120px;
+}
+/* 日付（時分） */
+input[type='text'].w-time {
+  width: 64px;
+}
+input[type='time'] {
+  width: 95px;
+}
+.timepicker-wrapper {
+  width: 100px;
+}
+/* 日付（年月日時分） */
+input[type='text'].w-date-time {
+  width: 148px;
+}
+/* 年のテキスト */
+.year {
+  width: 100px;
+}
+/* 月のプルダウン */
+.w-month-dropdown {
+  width: 100px;
+}
+/* 期間の～の左右の余白定義 */
+.daterange-wrapper {
+  display: flex;
+}
+span.separator-period {
+  margin-top: 5px;
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}

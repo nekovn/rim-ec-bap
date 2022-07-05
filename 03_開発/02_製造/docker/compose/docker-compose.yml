@@ -1,0 +1,46 @@
+version: '3.3'
+services:
+  bapec:
+    container_name: bapec
+    hostname: bapec
+    build: ../build/apache24-php74
+    privileged: true
+    volumes:
+      - ../../bapec:/var/www/html/bapec
+      - ./config/httpd/bapec.conf:/etc/httpd/conf.d/bapec.conf
+      - ./config/php/php.ini:/etc/php.ini
+    ports:
+      - '8000:8000'
+    restart: always
+
+  bapec_mail:
+    image: mailhog/mailhog
+    ports:
+      - 1024:1025
+      - 8024:8025
+    environment:
+      MH_STORAGE: maildir
+      MH_MAILDIR_PATH: /tmp
+    volumes:
+      - ../mail:/tmp
+    restart: always
+
+  dynamodb-local:
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
+    image: "amazon/dynamodb-local:latest"
+    container_name: dynamodb-local
+    ports:
+      - "8100:8000"
+    volumes:
+      - "../dynamodb:/home/dynamodblocal/data"
+    working_dir: /home/dynamodblocal
+
+  dynamodb-admin:
+    container_name: test_dynamodb-admin
+    image: aaronshaf/dynamodb-admin:latest
+    environment:
+      - DYNAMO_ENDPOINT=dynamodb-local:8000
+    ports:
+      - 8101:8001
+    depends_on:
+      - dynamodb-local

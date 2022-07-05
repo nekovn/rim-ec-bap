@@ -1,0 +1,118 @@
+@import "node_modules/@coreui/coreui/scss/coreui";
+
+// Here you can add other styles
+
+//--- サイドバー表示時にbodyにかぶせるoverlay
+.c-sidebar-backdrop {
+  //@include media-breakpoint-down(breakpoint-before($mobile-breakpoint)) {
+    position: fixed;
+    top: $header-height;
+    left: $sidebar-width;
+    z-index: $zindex-fixed;
+    width: 100vw;
+    height: 100vh;
+    // background-color: $sidebar-backdrop-bg;
+    transition: $layout-transition-speed;
+
+    // Fade for backdrop
+    &.c-fade { opacity: 0; }
+    &.c-show { opacity: $sidebar-backdrop-opacity; }
+  //}
+}
+// サイドメニュー表示時のc-body設定
+// .show-menu {
+//     margin-left: calc(#{$sidebar-width} * -1);
+// }
+
+.form-control.form-check {
+  border-style: none;
+}
+
+.table-sticky thead {
+  position: sticky;
+  top: 30px;
+  display: table;
+  width: 100%;
+  z-index: 1030;
+}
+
+.table-sticky tbody {
+  display: table;
+  width: 100%;
+}
+
+
+.c-header,
+.c-header-nav,
+.c-sidebar-brand {
+  min-height: 30px;
+}
+
+.c-sidebar-brand {
+  flex: 0 0 30px;
+  color: #000;
+  background-color: #fff !important;
+}
+
+.btn-search,
+.btn-clear {
+  width: 120px;
+}
+
+.searchcondition-area button.select_btn {
+  width: 60px;
+  margin-top: 2px;
+}
+
+.c-sidebar {
+  color: #fff;
+  background: #181d1f;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover
+, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover{
+  color: #fff;
+  background: #3974a2;
+}
+
+.c-sidebar-nav-link, .c-sidebar-nav-dropdown-toggle, .c-sidebar .nav-link  {
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+//title-Dropduwnメニュー
+.c-sidebar-nav-dropdown.title-dropdown {
+    position: relative;
+    margin: 0;
+    transition: background .3s ease-in-out;
+}
+
+.c-sidebar-nav-dropdown.title-dropdown .c-sidebar-nav-dropdown-toggle {
+    padding: 0.75rem 1rem;
+}
+html:not([dir=rtl]) .title-dropdown .c-sidebar-nav-dropdown-items .c-sidebar-nav-link {
+    padding-left: 70px;
+}
+
+.form-control {
+  color: #333333;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #d8dbe0;
+  opacity: 1;
+  color: #333333;
+}
+
+.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
+  color: #333333;
+}
+
+.break_column {
+  width: auto;
+  min-width: 0;
+  height: 100%;
+  word-wrap: break-word;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}

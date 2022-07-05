@@ -1,0 +1,1829 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'noto sans';
+  src: url("../fonts/NotoSansCJKjp-Regular.woff") format("truetype");
+  font-display: swap; }
+@font-face {
+  font-family: 'noto serif';
+  src: url("../fonts/NotoSerifJP-Regular.woff") format("truetype");
+  font-display: swap; }
+@font-face {
+  font-family: 'EBGaramond';
+  src: url("../fonts/EBGaramond12-Regular.ttf") format("truetype");
+  font-display: swap; }
+/* *******************************************
+     トップページ
+******************************************* */
+#top .sec01 {
+  padding: 30px 0 70px; }
+  #top .sec01 dl {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+    #top .sec01 dl dt {
+      width: 175px; }
+    #top .sec01 dl dd {
+      width: 625px;
+      margin-left: 20px; }
+
+@media (max-width: 640px) {
+  #top .sec01 {
+    padding: 6% 0 8%; }
+    #top .sec01 dl {
+      max-width: 96%;
+      display: block;
+      align-items: center; }
+      #top .sec01 dl dt {
+        width: 30%;
+        margin: 0 auto 3%; }
+      #top .sec01 dl dd {
+        width: 100%;
+        margin-left: 0; } }
+#top .sec02 {
+  background: #f2f2f2;
+  padding: 50px 0 50px; }
+  #top .sec02 .inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px; }
+  #top .sec02 ul {
+    overflow: hidden; }
+    #top .sec02 ul li {
+      width: 49%;
+      float: left; }
+      #top .sec02 ul li:last-child {
+        float: right; }
+      #top .sec02 ul li img {
+        width: 100%;
+        height: auto; }
+      #top .sec02 ul li a {
+        cursor: pointer; }
+      #top .sec02 ul li p {
+        margin-top: 10px; }
+
+@media (max-width: 640px) {
+  #top .sec02 {
+    padding: 8% 0; }
+    #top .sec02 .inner {
+      max-width: 94%;
+      padding: 0; }
+    #top .sec02 ul li {
+      width: 100%;
+      float: none; }
+      #top .sec02 ul li:last-child {
+        float: none;
+        margin-top: 5%; }
+      #top .sec02 ul li p {
+        margin-top: 2%; } }
+#top .sec03 {
+  padding: 0 0 50px; }
+  #top .sec03 ul.feature {
+    margin-bottom: 70px;
+    overflow: hidden; }
+    #top .sec03 ul.feature li {
+      width: 30%;
+      float: left;
+      margin-right: 5%; }
+      #top .sec03 ul.feature li:last-child {
+        margin-right: 0; }
+      #top .sec03 ul.feature li img {
+        width: 100%;
+        height: auto; }
+  #top .sec03 ul.recommend {
+    margin-bottom: 70px;
+    overflow: hidden; }
+    #top .sec03 ul.recommend li {
+      width: 22.5%;
+      float: left;
+      margin-right: 3.3333%;
+      margin-bottom: 3%; }
+      #top .sec03 ul.recommend li:nth-child(4n) {
+        margin-right: 0; }
+      #top .sec03 ul.recommend li:nth-child(4n+1) {
+        clear: both; }
+      #top .sec03 ul.recommend li figure {
+        margin-bottom: 10px; }
+        #top .sec03 ul.recommend li figure img {
+          width: 100%;
+          height: auto; }
+      #top .sec03 ul.recommend li .name {
+        font-size: 16px;
+        font-weight: bold; }
+      #top .sec03 ul.recommend li .txt {
+        margin-bottom: 5px; }
+      #top .sec03 ul.recommend li .price {
+        text-align: right;
+        color: #836a28;
+        font-weight: bold; }
+      #top .sec03 ul.recommend li a {
+        display: block; }
+        #top .sec03 ul.recommend li a:hover {
+          text-decoration: none; }
+  #top .sec03 .bnr img {
+    width: 100%;
+    height: auto; }
+
+@media (max-width: 640px) {
+  #top .sec03 {
+    padding: 0 0 3%; }
+    #top .sec03 ul.feature {
+      margin-bottom: 8%; }
+      #top .sec03 ul.feature li {
+        width: 30%;
+        margin-right: 5%; }
+        #top .sec03 ul.feature li:last-child {
+          margin-right: 0; }
+    #top .sec03 ul.recommend {
+      margin-bottom: 8%; }
+      #top .sec03 ul.recommend li {
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+        margin-bottom: 6%; }
+        #top .sec03 ul.recommend li:nth-child(3n+1) {
+          clear: both; }
+        #top .sec03 ul.recommend li:nth-child(3n) {
+          margin-right: 0 !important; }
+        #top .sec03 ul.recommend li:nth-child(4n) {
+          margin-right: 3.5%; }
+        #top .sec03 ul.recommend li:nth-child(4n+1) {
+          clear: none; }
+        #top .sec03 ul.recommend li figure {
+          margin-bottom: 3%; }
+        #top .sec03 ul.recommend li .name {
+          font-size: 13px; }
+        #top .sec03 ul.recommend li .txt {
+          margin-bottom: 2%; } }
+/* *******************************************
+     商品一覧・詳細
+******************************************* */
+#products section {
+  max-width: 100%; }
+  #products section .ttl_page {
+    background: #f2f2f2;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 16px; }
+  #products section .result_area {
+    margin-bottom: 30px;
+    overflow: hidden; }
+    #products section .result_area dt {
+      float: left;
+      padding-top: 5px; }
+    #products section .result_area dd {
+      float: right; }
+      #products section .result_area dd select {
+        border: 1px solid #c6c6c6;
+        background: #fafafa;
+        width: 150px;
+        margin-left: 5px;
+        padding: 8px 2%;
+        font-size: 14px;
+        cursor: pointer; }
+  #products section .products_list {
+    margin-bottom: 50px;
+    overflow: hidden; }
+    #products section .products_list li {
+      border: 1px solid #ccc;
+      width: 23.2%;
+      float: left;
+      margin-right: 2%;
+      margin-bottom: 2%; }
+      #products section .products_list li a {
+        display: block;
+        padding: 3% 3% 5%;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        #products section .products_list li a figure {
+          margin-bottom: 10px; }
+          #products section .products_list li a figure img {
+            width: 100%;
+            height: auto; }
+          #products section .products_list li a figure + div .name {
+            margin-bottom: 10px; }
+          #products section .products_list li a figure + div .kikaku {
+            margin-bottom: 10px; }
+          #products section .products_list li a figure + div .price {
+            text-align: right; }
+        #products section .products_list li a:hover {
+          background: #f2f2f2;
+          text-decoration: none;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          transition: .5s; }
+      #products section .products_list li:nth-child(4n) {
+        margin-right: 0; }
+  #products section .products_detail {
+    margin-bottom: 50px;
+    overflow: hidden; }
+    #products section .products_detail figure {
+      width: 40%;
+      float: left; }
+      #products section .products_detail figure #pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #products section .products_detail figure #pic #slider {
+          width: 100%;
+          margin: 0 auto 10px; }
+        #products section .products_detail figure #pic #thumbnail-list {
+          width: 100%;
+          margin: 0 auto;
+          overflow: hidden; }
+          #products section .products_detail figure #pic #thumbnail-list li {
+            width: 32%;
+            float: left;
+            margin: 0 2% 10px 0;
+            position: relative;
+            cursor: pointer;
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out; }
+            #products section .products_detail figure #pic #thumbnail-list li:hover {
+              opacity: .7;
+              -moz-transition: .5s;
+              -webkit-transition: .5s;
+              -o-transition: .5s;
+              -ms-transition: .5s;
+              transition: .5s; }
+            #products section .products_detail figure #pic #thumbnail-list li:nth-child(3n) {
+              margin: 0 0 10px; }
+        #products section .products_detail figure #pic img {
+          width: 100%;
+          height: auto; }
+      #products section .products_detail figure + div {
+        width: 53%;
+        float: right; }
+        #products section .products_detail figure + div .code {
+          margin-bottom: 10px; }
+        #products section .products_detail figure + div .cate {
+          margin-bottom: 10px; }
+        #products section .products_detail figure + div .brand {
+          margin-bottom: 20px; }
+        #products section .products_detail figure + div .name {
+          margin-bottom: 10px; }
+        #products section .products_detail figure + div .kikaku {
+          margin-bottom: 20px; }
+        #products section .products_detail figure + div .price {
+          margin-bottom: 20px;
+          text-align: right;
+          font-size: 16px; }
+        #products section .products_detail figure + div .quantity_area {
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 20px;
+          padding: 20px 20px;
+          overflow: hidden; }
+          #products section .products_detail figure + div .quantity_area dt {
+            float: left; }
+            #products section .products_detail figure + div .quantity_area dt select {
+              border: 1px solid #c6c6c6;
+              background: #fafafa;
+              width: 70px;
+              margin: 0 0 0 5px;
+              padding: 11px 2%;
+              font-size: 14px;
+              cursor: pointer; }
+          #products section .products_detail figure + div .quantity_area dd {
+            float: left;
+            margin-left: 20px; }
+            #products section .products_detail figure + div .quantity_area dd .button {
+              display: block;
+              background: #836a28;
+              border: none;
+              width: 180px;
+              margin: 0 auto;
+              padding: 12px 0;
+              text-align: center;
+              color: #fff;
+              font-size: 14px;
+              letter-spacing: 0.1em;
+              cursor: pointer;
+              -moz-transition: .5s;
+              -webkit-transition: .5s;
+              -o-transition: .5s;
+              -ms-transition: .5s;
+              transition: .5s; }
+              #products section .products_detail figure + div .quantity_area dd .button:hover {
+                background: rgba(131, 106, 40, 0.8);
+                -webkit-transition: 0.3s ease-in-out;
+                -moz-transition: 0.3s ease-in-out;
+                -o-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out; }
+          #products section .products_detail figure + div .quantity_area .soldout {
+            color: #FC2D52;
+            font-size: 24px; }
+        #products section .products_detail figure + div .caution {
+          margin-bottom: 20px;
+          color: #FC2D52; }
+        #products section .products_detail figure + div .limit {
+          margin-bottom: 10px; }
+
+@media (max-width: 640px) {
+  #products section .ttl_page {
+    margin-bottom: 7%;
+    padding: 2% 3%;
+    font-size: 14px; }
+  #products section .result_area {
+    margin-bottom: 5%; }
+    #products section .result_area dt {
+      padding-top: 5px; }
+    #products section .result_area dd select {
+      width: 120px;
+      margin-left: 5px;
+      padding: 8px 2%;
+      font-size: 12px; }
+  #products section .products_list {
+    margin-bottom: 8%; }
+    #products section .products_list li {
+      width: 47.5%;
+      margin-right: 0;
+      margin-bottom: 4%; }
+      #products section .products_list li a {
+        padding: 3% 3% 5%; }
+        #products section .products_list li a figure {
+          margin-bottom: 3%; }
+          #products section .products_list li a figure + div .name {
+            margin-bottom: 3%; }
+          #products section .products_list li a figure + div .kikaku {
+            margin-bottom: 3%; }
+        #products section .products_list li a:hover {
+          background: #fff; }
+      #products section .products_list li:nth-child(odd) {
+        clear: both; }
+      #products section .products_list li:nth-child(even) {
+        float: right; }
+  #products section .products_detail {
+    margin-bottom: 6%; }
+    #products section .products_detail figure {
+      width: 80%;
+      float: none;
+      margin: 0 auto 6%; }
+      #products section .products_detail figure #pic #thumbnail-list li:hover {
+        opacity: 1.0; }
+      #products section .products_detail figure + div {
+        width: 100%;
+        float: none; }
+        #products section .products_detail figure + div .code {
+          margin-bottom: 3%; }
+        #products section .products_detail figure + div .cate {
+          margin-bottom: 3%; }
+        #products section .products_detail figure + div .brand {
+          margin-bottom: 5%; }
+        #products section .products_detail figure + div .name {
+          margin-bottom: 3%; }
+        #products section .products_detail figure + div .kikaku {
+          margin-bottom: 5%; }
+        #products section .products_detail figure + div .price {
+          margin-bottom: 5%;
+          font-size: 14px; }
+        #products section .products_detail figure + div .quantity_area {
+          margin-bottom: 5%;
+          padding: 5% 3%; }
+          #products section .products_detail figure + div .quantity_area dt select {
+            width: 60px;
+            padding: 8px 2%;
+            font-size: 13px; }
+          #products section .products_detail figure + div .quantity_area dd {
+            margin-left: 5%; }
+            #products section .products_detail figure + div .quantity_area dd .button {
+              width: 140px;
+              padding: 10px 0;
+              font-size: 13px; }
+              #products section .products_detail figure + div .quantity_area dd .button:hover {
+                background: #836a28; }
+          #products section .products_detail figure + div .quantity_area .soldout {
+            font-size: 20px; }
+        #products section .products_detail figure + div .caution {
+          margin-bottom: 5%; }
+        #products section .products_detail figure + div .limit {
+          margin-bottom: 3%; } }
+/* *******************************************
+     ショッピングカート一覧
+******************************************* */
+#cart section {
+  max-width: 100%;
+  overflow: hidden; }
+  #cart section .ttl_page {
+    background: #f2f2f2;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 16px; }
+  #cart section .table_cart {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 50px; }
+    #cart section .table_cart th {
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      background: #f2f2f2;
+      padding: 10px 10px;
+      text-align: center; }
+    #cart section .table_cart td {
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 10px; }
+      #cart section .table_cart td:first-child {
+        width: 10%; }
+        #cart section .table_cart td:first-child img {
+          width: 100%;
+          height: auto; }
+      #cart section .table_cart td:nth-child(3) {
+        text-align: center; }
+      #cart section .table_cart td:nth-child(4), #cart section .table_cart td:nth-child(6) {
+        text-align: right; }
+      #cart section .table_cart td:nth-child(5) {
+        width: 8%;
+        text-align: center; }
+        #cart section .table_cart td:nth-child(5) select {
+          border: 1px solid #c6c6c6;
+          background: #fafafa;
+          width: 65px;
+          margin: 0 0 0 5px;
+          padding: 11px 2%;
+          font-size: 14px;
+          cursor: pointer; }
+      #cart section .table_cart td:nth-child(7) {
+        width: 10%; }
+        #cart section .table_cart td:nth-child(7) .button {
+          display: block;
+          background: gray;
+          border: none;
+          width: 60px;
+          margin: 0 auto;
+          padding: 10px 0;
+          text-align: center;
+          color: #fff;
+          font-size: 13px;
+          letter-spacing: 0.1em;
+          cursor: pointer;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          transition: .5s; }
+          #cart section .table_cart td:nth-child(7) .button:hover {
+            background: rgba(128, 128, 128, 0.8);
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out; }
+  #cart section .total {
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0.1em; }
+  #cart section .txt_guide {
+    margin-bottom: 30px;
+    text-align: right; }
+  #cart section .btn_area {
+    width: 530px;
+    float: right;
+    margin: 0;
+    overflow: hidden; }
+    #cart section .btn_area .button {
+      display: block;
+      background: #836a28;
+      border: none;
+      width: 250px;
+      margin: 0 auto;
+      padding: 14px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      transition: .5s; }
+      #cart section .btn_area .button.left {
+        float: left; }
+      #cart section .btn_area .button.right {
+        background: gray;
+        float: right; }
+        #cart section .btn_area .button.right:hover {
+          background: rgba(128, 128, 128, 0.8); }
+      #cart section .btn_area .button:hover {
+        background: rgba(131, 106, 40, 0.8);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+
+@media (max-width: 640px) {
+  #cart section .ttl_page {
+    margin-bottom: 7%;
+    padding: 2% 3%;
+    font-size: 14px; }
+  #cart section .table_cart {
+    border-top: none;
+    border-left: none;
+    width: 100%;
+    margin-bottom: 5%; }
+    #cart section .table_cart tr {
+      display: block;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      width: 91.5%;
+      padding: 3% 4%; }
+      #cart section .table_cart tr:first-child {
+        display: none; }
+      #cart section .table_cart tr:last-child {
+        border-bottom: 1px solid #ccc; }
+    #cart section .table_cart th {
+      display: none; }
+    #cart section .table_cart td {
+      display: block;
+      width: 94%;
+      border-right: none;
+      border-bottom: 1px dotted #ccc;
+      padding: 10px 3%; }
+      #cart section .table_cart td span.sp {
+        display: inline-block;
+        margin-right: 5px;
+        font-weight: bold; }
+      #cart section .table_cart td:first-child {
+        border: none;
+        width: 30%;
+        margin: 0 auto; }
+      #cart section .table_cart td:nth-child(3) {
+        text-align: left; }
+      #cart section .table_cart td:nth-child(4), #cart section .table_cart td:nth-child(6) {
+        text-align: left; }
+      #cart section .table_cart td:nth-child(5) {
+        width: 94%;
+        text-align: left; }
+        #cart section .table_cart td:nth-child(5) select {
+          width: 70px;
+          margin: 0 0 0 5px;
+          padding: 5px 2%;
+          font-size: 13px; }
+      #cart section .table_cart td:nth-child(7) {
+        border-bottom: none;
+        width: 94%;
+        margin-bottom: 0; }
+        #cart section .table_cart td:nth-child(7) .button {
+          width: 60px;
+          padding: 7px 0;
+          font-size: 12px; }
+          #cart section .table_cart td:nth-child(7) .button:hover {
+            background: gray; }
+  #cart section .total {
+    border: 1px solid #ccc;
+    margin-bottom: 4%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px; }
+  #cart section .txt_guide {
+    margin-bottom: 6%;
+    text-align: left; }
+  #cart section .btn_area {
+    width: 100%;
+    float: none; }
+    #cart section .btn_area .button {
+      width: 250px;
+      padding: 12px 0;
+      font-size: 13px; }
+      #cart section .btn_area .button.left {
+        width: 49%; }
+      #cart section .btn_area .button.right {
+        width: 49%; }
+        #cart section .btn_area .button.right:hover {
+          background: gray; }
+      #cart section .btn_area .button:hover {
+        background: #836a28; } }
+/* *******************************************
+     注文情報入力
+******************************************* */
+#order section {
+  max-width: 100%;
+  overflow: hidden; }
+  #order section .ttl_page {
+    background: #f2f2f2;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 16px; }
+  #order section .box_order {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    overflow: hidden; }
+    #order section .box_order > dl.single {
+      clear: both;
+      width: 100%; }
+      #order section .box_order > dl.single > dt {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        font-weight: bold; }
+      #order section .box_order > dl.single > dd {
+        margin-bottom: 50px; }
+        #order section .box_order > dl.single > dd .orderer li {
+          margin-bottom: 10px; }
+          #order section .box_order > dl.single > dd .orderer li:last-child {
+            margin-bottom: 0; }
+        #order section .box_order > dl.single > dd .radio {
+          overflow: hidden; }
+          #order section .box_order > dl.single > dd .radio li {
+            float: left;
+            margin-right: 30px; }
+            #order section .box_order > dl.single > dd .radio li input[type=radio] {
+              display: none; }
+            #order section .box_order > dl.single > dd .radio li label {
+              display: inline-block;
+              border-radius: 2px;
+              position: relative;
+              cursor: pointer;
+              margin-left: 20px;
+              padding: 10px 10px;
+              text-align: center;
+              font-size: 14px;
+              line-height: 1; }
+              #order section .box_order > dl.single > dd .radio li label:before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: -20px;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                background: #fff;
+                border: 1px solid #c6c6c6;
+                border-radius: 50%; }
+            #order section .box_order > dl.single > dd .radio li input[type="radio"]:checked + label:after {
+              position: absolute;
+              content: "";
+              top: 50%;
+              left: -16px;
+              width: 14px;
+              height: 14px;
+              margin-top: -6px;
+              border-radius: 50%;
+              background: #4e4d4d; }
+        #order section .box_order > dl.single > dd textarea {
+          border: 1px solid #c6c6c6;
+          background: #fafafa;
+          width: 80%;
+          height: 100px;
+          padding: 11px 1%;
+          font-size: 14px; }
+        #order section .box_order > dl.single > dd dl {
+          overflow: hidden; }
+          #order section .box_order > dl.single > dd dl.mb {
+            margin-bottom: 20px; }
+          #order section .box_order > dl.single > dd dl dt {
+            clear: both;
+            width: 200px;
+            float: left;
+            margin-bottom: 10px; }
+          #order section .box_order > dl.single > dd dl dd {
+            width: 200px;
+            float: left; }
+        #order section .box_order > dl.single > dd .table_check {
+          border-top: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          width: 100%; }
+          #order section .box_order > dl.single > dd .table_check th {
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background: #f2f2f2;
+            padding: 10px 10px;
+            text-align: center; }
+          #order section .box_order > dl.single > dd .table_check td {
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 10px; }
+            #order section .box_order > dl.single > dd .table_check td:first-child {
+              width: 10%; }
+              #order section .box_order > dl.single > dd .table_check td:first-child img {
+                width: 100%;
+                height: auto; }
+            #order section .box_order > dl.single > dd .table_check td:nth-child(3) {
+              text-align: center; }
+            #order section .box_order > dl.single > dd .table_check td:nth-child(4), #order section .box_order > dl.single > dd .table_check td:nth-child(6) {
+              text-align: right; }
+            #order section .box_order > dl.single > dd .table_check td:nth-child(5) {
+              width: 8%;
+              text-align: center; }
+    #order section .box_order > dl.double {
+      width: 47%;
+      float: left; }
+      #order section .box_order > dl.double.right {
+        float: right; }
+      #order section .box_order > dl.double > dt {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        font-weight: bold; }
+      #order section .box_order > dl.double > dd {
+        margin-bottom: 50px; }
+        #order section .box_order > dl.double > dd select {
+          border: 1px solid #c6c6c6;
+          background: #fafafa;
+          width: 180px;
+          padding: 11px 2%;
+          font-size: 14px;
+          cursor: pointer; }
+    #order section .box_order .ttl_fin {
+      margin: 50px 0 20px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold; }
+    #order section .box_order .txt_fin {
+      margin-bottom: 50px;
+      text-align: center;
+      line-height: 2.0; }
+  #order section .btn_area {
+    width: 530px;
+    margin: 0 auto;
+    overflow: hidden; }
+    #order section .btn_area .button {
+      display: block;
+      background: #836a28;
+      border: none;
+      width: 250px;
+      margin: 0 auto;
+      padding: 14px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      transition: .5s; }
+      #order section .btn_area .button.left {
+        background: gray;
+        float: left; }
+        #order section .btn_area .button.left:hover {
+          background: rgba(128, 128, 128, 0.8); }
+      #order section .btn_area .button.right {
+        float: right; }
+      #order section .btn_area .button:hover {
+        background: rgba(131, 106, 40, 0.8);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+
+@media (max-width: 640px) {
+  #order section .ttl_page {
+    margin-bottom: 7%;
+    padding: 2% 3%;
+    font-size: 14px; }
+  #order section .box_order {
+    margin-bottom: 6%;
+    padding: 3% 3%; }
+    #order section .box_order > dl.single > dt {
+      margin-bottom: 3%;
+      padding-bottom: 2%; }
+    #order section .box_order > dl.single > dd {
+      margin-bottom: 8%; }
+      #order section .box_order > dl.single > dd .orderer li {
+        margin-bottom: 3%; }
+      #order section .box_order > dl.single > dd .radio li {
+        margin-right: 10px; }
+        #order section .box_order > dl.single > dd .radio li label {
+          padding: 5px 8px 8px;
+          font-size: 12px; }
+          #order section .box_order > dl.single > dd .radio li label:before {
+            left: -20px;
+            width: 15px;
+            height: 15px;
+            margin-top: -10px; }
+        #order section .box_order > dl.single > dd .radio li input[type="radio"]:checked + label:after {
+          left: -16px;
+          width: 10px;
+          height: 10px;
+          margin-top: -6px; }
+      #order section .box_order > dl.single > dd textarea {
+        width: 95.5%;
+        height: 80px;
+        padding: 2% 2%;
+        font-size: 12px; }
+      #order section .box_order > dl.single > dd dl.mb {
+        margin-bottom: 4%; }
+      #order section .box_order > dl.single > dd dl dt {
+        clear: both;
+        width: 50%;
+        float: left;
+        margin-bottom: 3%; }
+      #order section .box_order > dl.single > dd dl dd {
+        width: 50%;
+        float: left; }
+      #order section .box_order > dl.single > dd .table_check {
+        border-top: none;
+        border-left: none; }
+        #order section .box_order > dl.single > dd .table_check tr {
+          display: block;
+          border-top: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          width: 92%;
+          padding: 3% 4% 5%; }
+          #order section .box_order > dl.single > dd .table_check tr:first-child {
+            display: none; }
+          #order section .box_order > dl.single > dd .table_check tr:last-child {
+            border-bottom: 1px solid #ccc; }
+        #order section .box_order > dl.single > dd .table_check th {
+          display: none; }
+        #order section .box_order > dl.single > dd .table_check td {
+          display: block;
+          width: 94%;
+          border-right: none;
+          border-bottom: 1px dotted #ccc;
+          padding: 10px 3%; }
+          #order section .box_order > dl.single > dd .table_check td span.sp {
+            display: inline-block;
+            margin-right: 5px;
+            font-weight: bold; }
+          #order section .box_order > dl.single > dd .table_check td:first-child {
+            border: none;
+            width: 30%;
+            margin: 0 auto; }
+          #order section .box_order > dl.single > dd .table_check td:nth-child(3) {
+            text-align: left; }
+          #order section .box_order > dl.single > dd .table_check td:nth-child(4), #order section .box_order > dl.single > dd .table_check td:nth-child(6) {
+            text-align: left; }
+          #order section .box_order > dl.single > dd .table_check td:nth-child(5) {
+            width: 94%;
+            text-align: left; }
+    #order section .box_order > dl.double {
+      width: 100%;
+      float: none; }
+      #order section .box_order > dl.double.right {
+        float: none; }
+      #order section .box_order > dl.double > dt {
+        margin-bottom: 3%;
+        padding-bottom: 2%; }
+      #order section .box_order > dl.double > dd {
+        margin-bottom: 8%; }
+        #order section .box_order > dl.double > dd select {
+          padding: 2% 2%;
+          font-size: 12px; }
+    #order section .box_order .ttl_fin {
+      margin: 8% 0 4%;
+      font-size: 14px; }
+    #order section .box_order .txt_fin {
+      margin-bottom: 8%; }
+  #order section .btn_area {
+    width: 100%; }
+    #order section .btn_area .button {
+      padding: 3% 0;
+      font-size: 13px; }
+      #order section .btn_area .button.left {
+        width: 49%; }
+        #order section .btn_area .button.left:hover {
+          background: gray; }
+      #order section .btn_area .button.right {
+        width: 49%; }
+      #order section .btn_area .button:hover {
+        background: #836a28; } }
+/* *******************************************
+     ログイン
+******************************************* */
+#login section {
+  max-width: 100%; }
+  #login section .txt_forget {
+    width: 620px;
+    margin: 0 auto 40px; }
+  #login section dl {
+    width: 620px;
+    margin: 0 auto;
+    overflow: hidden; }
+    #login section dl dt {
+      clear: both;
+      width: 170px;
+      float: left;
+      margin-bottom: 25px;
+      padding-top: 10px;
+      position: relative; }
+    #login section dl dd {
+      width: 450px;
+      float: right;
+      margin-bottom: 25px; }
+      #login section dl dd input[type=text] {
+        border: 1px solid #c6c6c6;
+        background: #fafafa;
+        padding: 10px 2%;
+        font-size: 14px; }
+        #login section dl dd input[type=text].text01 {
+          width: 95%; }
+  #login section .btn_area {
+    width: 450px;
+    margin: 20px auto 20px;
+    overflow: hidden; }
+    #login section .btn_area .button {
+      display: block;
+      background: #836a28;
+      border: none;
+      width: 280px;
+      margin: 0 auto;
+      padding: 14px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      transition: .5s; }
+      #login section .btn_area .button:hover {
+        background: rgba(131, 106, 40, 0.8);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+  #login section .forget {
+    text-align: center; }
+    #login section .forget a {
+      color: #5a8dda;
+      text-decoration: underline; }
+
+@media (max-width: 640px) {
+  #login section {
+    max-width: 100%; }
+    #login section .txt_forget {
+      width: 100%;
+      margin: 0 auto 7%; }
+    #login section dl {
+      width: 100%; }
+      #login section dl dt {
+        width: 100%;
+        float: none;
+        margin-bottom: 2%;
+        padding-top: 0; }
+      #login section dl dd {
+        width: 100%;
+        float: none;
+        margin-bottom: 5%; }
+        #login section dl dd input[type=text] {
+          padding: 2% 2%;
+          font-size: 12px; }
+          #login section dl dd input[type=text].text01 {
+            width: 94%; }
+    #login section .btn_area {
+      width: 100%;
+      margin: 5% auto 4%; }
+      #login section .btn_area .button {
+        width: 80%;
+        padding: 3% 0;
+        font-size: 13px; }
+        #login section .btn_area .button:hover {
+          background: #836a28; } }
+/* *******************************************
+     新規会員登録
+******************************************* */
+#registration section {
+  max-width: 100%; }
+  #registration section dl {
+    margin: 0 0 30px;
+    overflow: hidden; }
+    #registration section dl dt {
+      clear: both;
+      width: 28%;
+      float: left;
+      margin-bottom: 25px;
+      padding-top: 10px;
+      position: relative; }
+      #registration section dl dt.required:after {
+        content: "必須";
+        background: #FC2D52;
+        margin: 0 0 0 5px;
+        padding: 0 4px;
+        color: #fff;
+        font-size: 10px; }
+    #registration section dl dd {
+      width: 72%;
+      float: right;
+      margin-bottom: 25px; }
+      #registration section dl dd input[type=text] {
+        border: 1px solid #c6c6c6;
+        background: #fafafa;
+        padding: 10px 2%;
+        font-size: 14px; }
+        #registration section dl dd input[type=text].text01 {
+          width: 25%; }
+        #registration section dl dd input[type=text].text02 {
+          width: 20%; }
+        #registration section dl dd input[type=text].text03 {
+          width: 75%; }
+        #registration section dl dd input[type=text].text04 {
+          width: 45%; }
+      #registration section dl dd .name01 {
+        padding-right: 20px; }
+      #registration section dl dd .name02 {
+        padding-right: 7px; }
+      #registration section dl dd .kome {
+        margin-left: 10px;
+        font-size: 12px; }
+      #registration section dl dd input[type=button] {
+        border: 1px solid #c6c6c6;
+        margin-left: 20px;
+        padding: 9px 20px;
+        cursor: pointer;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        #registration section dl dd input[type=button]:hover {
+          background: #ddd;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          transition: .5s; }
+      #registration section dl dd .radio {
+        overflow: hidden; }
+        #registration section dl dd .radio li {
+          float: left;
+          margin-right: 15px;
+          padding-bottom: 2px; }
+          #registration section dl dd .radio li input[type=radio] {
+            display: none; }
+          #registration section dl dd .radio li label {
+            display: inline-block;
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 20px;
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1; }
+            #registration section dl dd .radio li label:before {
+              position: absolute;
+              content: "";
+              top: 50%;
+              left: -20px;
+              width: 20px;
+              height: 20px;
+              margin-top: -10px;
+              background: #fff;
+              border: 1px solid #c6c6c6;
+              border-radius: 50%; }
+          #registration section dl dd .radio li input[type="radio"]:checked + label:after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: -16px;
+            width: 14px;
+            height: 14px;
+            margin-top: -6px;
+            border-radius: 50%;
+            background: #4e4d4d; }
+      #registration section dl dd select {
+        border: 1px solid #c6c6c6;
+        background: #fafafa;
+        padding: 10px 2%;
+        font-size: 14px;
+        cursor: pointer; }
+        #registration section dl dd select.sel01 {
+          width: 30%; }
+        #registration section dl dd select.sel02 {
+          width: 15%; }
+        #registration section dl dd select.sel03 {
+          width: 12%; }
+      #registration section dl dd .birth {
+        margin: 0 15px 0 10px; }
+  #registration section .kiyaku {
+    text-align: center; }
+    #registration section .kiyaku .link {
+      margin-bottom: 15px; }
+      #registration section .kiyaku .link a {
+        color: #5a8dda;
+        text-decoration: underline; }
+    #registration section .kiyaku input[type=checkbox] {
+      display: none; }
+    #registration section .kiyaku .check_css {
+      -webkit-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 30px;
+      vertical-align: middle;
+      cursor: pointer; }
+    #registration section .kiyaku .check_css:after {
+      -webkit-transition: border-color 0.2s linear;
+      transition: border-color 0.2s linear;
+      position: absolute;
+      top: 40%;
+      left: 0;
+      display: block;
+      margin-top: -9px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #c6c6c6;
+      border-radius: 4px;
+      content: ''; }
+    #registration section .kiyaku .check_css:before {
+      -webkit-transition: opacity 0.2s linear;
+      transition: opacity 0.2s linear;
+      position: absolute;
+      top: 40%;
+      left: 7px;
+      display: block;
+      margin-top: -7px;
+      width: 7px;
+      height: 10px;
+      border-right: 3px solid #4e4d4d;
+      border-bottom: 3px solid #4e4d4d;
+      content: '';
+      opacity: 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    #registration section .kiyaku input[type=checkbox]:checked + .check_css:before {
+      opacity: 1; }
+  #registration section .btn_area {
+    width: 280px;
+    margin: 40px auto 0;
+    overflow: hidden; }
+    #registration section .btn_area .button {
+      display: block;
+      background: #836a28;
+      border: none;
+      width: 280px;
+      margin: 0 auto;
+      padding: 14px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      transition: .5s; }
+      #registration section .btn_area .button:hover {
+        background: rgba(131, 106, 40, 0.8);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+
+@media (max-width: 640px) {
+  #registration section dl {
+    margin: 8% 0 5%; }
+    #registration section dl dt {
+      width: 100%;
+      float: none;
+      margin-bottom: 2%;
+      padding-top: 0; }
+    #registration section dl dd {
+      width: 100%;
+      float: none;
+      margin-bottom: 5%; }
+      #registration section dl dd input[type=text] {
+        padding: 2% 2%;
+        font-size: 12px; }
+        #registration section dl dd input[type=text].text01 {
+          width: 32%; }
+        #registration section dl dd input[type=text].text02 {
+          width: 30%; }
+        #registration section dl dd input[type=text].text03 {
+          width: 94%; }
+        #registration section dl dd input[type=text].text04 {
+          width: 94%; }
+      #registration section dl dd .name01 {
+        padding-right: 20px; }
+      #registration section dl dd .name02 {
+        padding-right: 7px; }
+      #registration section dl dd .kome {
+        margin-left: 2%;
+        color: #999;
+        font-size: 10px; }
+      #registration section dl dd input[type=button] {
+        border: 1px solid #c6c6c6;
+        margin-left: 20px;
+        padding: 5px 10px;
+        font-size: 12px; }
+      #registration section dl dd .radio li {
+        margin-right: 10px; }
+        #registration section dl dd .radio li label {
+          padding: 5px 8px 8px;
+          font-size: 12px; }
+          #registration section dl dd .radio li label:before {
+            left: -20px;
+            width: 15px;
+            height: 15px;
+            margin-top: -10px; }
+        #registration section dl dd .radio li input[type="radio"]:checked + label:after {
+          left: -16px;
+          width: 10px;
+          height: 10px;
+          margin-top: -6px; }
+      #registration section dl dd select {
+        padding: 2% 2%;
+        font-size: 12px; }
+        #registration section dl dd select.sel01 {
+          width: 40%; }
+        #registration section dl dd select.sel02 {
+          width: 25%; }
+        #registration section dl dd select.sel03 {
+          width: 20%; }
+      #registration section dl dd .birth {
+        margin: 0 2% 0 3%; }
+  #registration section .kiyaku .link {
+    margin-bottom: 3%; }
+  #registration section .btn_area {
+    width: 100%;
+    margin: 8% auto 0;
+    overflow: hidden; }
+    #registration section .btn_area .button {
+      width: 80%;
+      padding: 3% 0;
+      font-size: 13px; }
+      #registration section .btn_area .button:hover {
+        background: #836a28; } }
+/* *******************************************
+     マイページ
+******************************************* */
+#mypage section {
+  max-width: 100%; }
+  #mypage section .name {
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    font-size: 20px;
+    letter-spacing: 0.1em; }
+  #mypage section .btn_menu {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 30px;
+    overflow: hidden; }
+    #mypage section .btn_menu li {
+      width: 330px;
+      float: left; }
+      #mypage section .btn_menu li:last-child {
+        float: right; }
+      #mypage section .btn_menu li a {
+        display: block;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background: #f7f7f7;
+        padding: 50px 0;
+        text-align: center;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        #mypage section .btn_menu li a .icon {
+          width: 80px;
+          margin: 0 auto 20px; }
+          #mypage section .btn_menu li a .icon img {
+            width: 100%;
+            height: auto; }
+        #mypage section .btn_menu li a .ttl {
+          font-size: 16px; }
+        #mypage section .btn_menu li a:hover {
+          background: #f2f2f2;
+          text-decoration: none;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          transition: .5s; }
+  #mypage section .ttl_page {
+    background: #f2f2f2;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 16px; }
+  #mypage section dl.profile {
+    margin: 0 0 30px;
+    overflow: hidden; }
+    #mypage section dl.profile dt {
+      clear: both;
+      width: 28%;
+      float: left;
+      margin-bottom: 25px;
+      padding-top: 10px;
+      position: relative; }
+      #mypage section dl.profile dt.required:after {
+        content: "必須";
+        background: #FC2D52;
+        margin: 0 0 0 5px;
+        padding: 0 4px;
+        color: #fff;
+        font-size: 10px; }
+    #mypage section dl.profile dd {
+      width: 72%;
+      float: right;
+      margin-bottom: 25px; }
+      #mypage section dl.profile dd input[type=text] {
+        border: 1px solid #c6c6c6;
+        background: #fafafa;
+        padding: 10px 2%;
+        font-size: 14px; }
+        #mypage section dl.profile dd input[type=text].text01 {
+          width: 25%; }
+        #mypage section dl.profile dd input[type=text].text02 {
+          width: 20%; }
+        #mypage section dl.profile dd input[type=text].text03 {
+          width: 75%; }
+        #mypage section dl.profile dd input[type=text].text04 {
+          width: 45%; }
+      #mypage section dl.profile dd .name01 {
+        padding-right: 20px; }
+      #mypage section dl.profile dd .name02 {
+        padding-right: 7px; }
+      #mypage section dl.profile dd .kome {
+        margin-left: 10px;
+        font-size: 12px; }
+      #mypage section dl.profile dd input[type=button] {
+        border: 1px solid #c6c6c6;
+        margin-left: 20px;
+        padding: 9px 20px;
+        cursor: pointer;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        #mypage section dl.profile dd input[type=button]:hover {
+          background: #ddd;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          transition: .5s; }
+      #mypage section dl.profile dd .radio {
+        overflow: hidden; }
+        #mypage section dl.profile dd .radio li {
+          float: left;
+          margin-right: 15px;
+          padding-bottom: 2px; }
+          #mypage section dl.profile dd .radio li input[type=radio] {
+            display: none; }
+          #mypage section dl.profile dd .radio li label {
+            display: inline-block;
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 20px;
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1; }
+            #mypage section dl.profile dd .radio li label:before {
+              position: absolute;
+              content: "";
+              top: 50%;
+              left: -20px;
+              width: 20px;
+              height: 20px;
+              margin-top: -10px;
+              background: #fff;
+              border: 1px solid #c6c6c6;
+              border-radius: 50%; }
+          #mypage section dl.profile dd .radio li input[type="radio"]:checked + label:after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: -16px;
+            width: 14px;
+            height: 14px;
+            margin-top: -6px;
+            border-radius: 50%;
+            background: #4e4d4d; }
+      #mypage section dl.profile dd select {
+        border: 1px solid #c6c6c6;
+        background: #fafafa;
+        padding: 10px 2%;
+        font-size: 14px;
+        cursor: pointer; }
+        #mypage section dl.profile dd select.sel01 {
+          width: 30%; }
+        #mypage section dl.profile dd select.sel02 {
+          width: 15%; }
+        #mypage section dl.profile dd select.sel03 {
+          width: 12%; }
+      #mypage section dl.profile dd .birth {
+        margin: 0 15px 0 10px; }
+  #mypage section .result {
+    margin-bottom: 10px; }
+  #mypage section .box_history {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    overflow: hidden; }
+    #mypage section .box_history .list_detail {
+      margin-bottom: 30px;
+      overflow: hidden; }
+      #mypage section .box_history .list_detail li {
+        float: left;
+        margin-right: 40px; }
+        #mypage section .box_history .list_detail li:last-child {
+          margin-right: 0; }
+    #mypage section .box_history .list_item {
+      width: 82%;
+      float: left; }
+      #mypage section .box_history .list_item li {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center; }
+        #mypage section .box_history .list_item li:last-child {
+          margin-bottom: 0; }
+        #mypage section .box_history .list_item li figure {
+          width: 120px;
+          margin-right: 40px; }
+          #mypage section .box_history .list_item li figure img {
+            border: 1px solid #ddd;
+            width: 100%;
+            height: auto; }
+          #mypage section .box_history .list_item li figure + div {
+            width: -webkit-calc(100% - 160px);
+            width: calc(100% - 160px); }
+            #mypage section .box_history .list_item li figure + div p {
+              line-height: 2.0; }
+      #mypage section .box_history .list_item.wide {
+        width: 100%;
+        float: none;
+        margin-bottom: 50px; }
+    #mypage section .box_history .btn_detail {
+      width: 18%;
+      float: right; }
+      #mypage section .box_history .btn_detail .button {
+        display: block;
+        background: #836a28;
+        border: none;
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        transition: .5s; }
+        #mypage section .box_history .btn_detail .button:hover {
+          background: rgba(131, 106, 40, 0.8);
+          -webkit-transition: 0.3s ease-in-out;
+          -moz-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+    #mypage section .box_history .buyer {
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      width: 99.5%; }
+      #mypage section .box_history .buyer th {
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background: #f7f7f7;
+        width: 22%;
+        padding: 15px 20px;
+        vertical-align: top; }
+      #mypage section .box_history .buyer td {
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 20px; }
+  #mypage section .btn_area {
+    width: 530px;
+    margin: 40px auto 0;
+    overflow: hidden; }
+    #mypage section .btn_area .button {
+      display: block;
+      background: #836a28;
+      border: none;
+      width: 250px;
+      margin: 0 auto;
+      padding: 14px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      transition: .5s; }
+      #mypage section .btn_area .button.left {
+        float: left; }
+      #mypage section .btn_area .button.right {
+        float: right; }
+      #mypage section .btn_area .button:hover {
+        background: rgba(131, 106, 40, 0.8);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+      #mypage section .btn_area .button.link {
+        background: gray;
+        padding: 15px 0; }
+        #mypage section .btn_area .button.link:hover {
+          background: rgba(128, 128, 128, 0.8); }
+
+@media (max-width: 640px) {
+  #mypage section .name {
+    margin-bottom: 5%;
+    padding: 2% 3%;
+    font-size: 16px; }
+  #mypage section .btn_menu {
+    width: 100%;
+    padding-top: 5%; }
+    #mypage section .btn_menu li {
+      width: 48%; }
+      #mypage section .btn_menu li a {
+        padding: 7% 0; }
+        #mypage section .btn_menu li a .icon {
+          width: 50px;
+          margin: 0 auto 4%; }
+        #mypage section .btn_menu li a .ttl {
+          font-size: 14px; }
+        #mypage section .btn_menu li a:hover {
+          background: #f7f7f7; }
+  #mypage section .ttl_page {
+    margin-bottom: 7%;
+    padding: 2% 3%;
+    font-size: 14px; }
+  #mypage section dl.profile {
+    margin: 8% 0 5%; }
+    #mypage section dl.profile dt {
+      width: 100%;
+      float: none;
+      margin-bottom: 2%;
+      padding-top: 0; }
+    #mypage section dl.profile dd {
+      width: 100%;
+      float: none;
+      margin-bottom: 5%; }
+      #mypage section dl.profile dd input[type=text] {
+        padding: 2% 2%;
+        font-size: 12px; }
+        #mypage section dl.profile dd input[type=text].text01 {
+          width: 32%; }
+        #mypage section dl.profile dd input[type=text].text02 {
+          width: 30%; }
+        #mypage section dl.profile dd input[type=text].text03 {
+          width: 94%; }
+        #mypage section dl.profile dd input[type=text].text04 {
+          width: 94%; }
+      #mypage section dl.profile dd .name01 {
+        padding-right: 20px; }
+      #mypage section dl.profile dd .name02 {
+        padding-right: 7px; }
+      #mypage section dl.profile dd .kome {
+        margin-left: 2%;
+        color: #999;
+        font-size: 10px; }
+      #mypage section dl.profile dd input[type=button] {
+        border: 1px solid #c6c6c6;
+        margin-left: 20px;
+        padding: 5px 10px;
+        font-size: 12px; }
+      #mypage section dl.profile dd .radio li {
+        margin-right: 10px; }
+        #mypage section dl.profile dd .radio li label {
+          padding: 5px 8px 8px;
+          font-size: 12px; }
+          #mypage section dl.profile dd .radio li label:before {
+            left: -20px;
+            width: 15px;
+            height: 15px;
+            margin-top: -10px; }
+        #mypage section dl.profile dd .radio li input[type="radio"]:checked + label:after {
+          left: -16px;
+          width: 10px;
+          height: 10px;
+          margin-top: -6px; }
+      #mypage section dl.profile dd select {
+        padding: 2% 2%;
+        font-size: 12px; }
+        #mypage section dl.profile dd select.sel01 {
+          width: 40%; }
+        #mypage section dl.profile dd select.sel02 {
+          width: 25%; }
+        #mypage section dl.profile dd select.sel03 {
+          width: 20%; }
+      #mypage section dl.profile dd .birth {
+        margin: 0 2% 0 3%; }
+  #mypage section .result {
+    margin-bottom: 3%; }
+  #mypage section .box_history {
+    margin-bottom: 6%;
+    padding: 3% 3% 5%; }
+    #mypage section .box_history .list_detail {
+      border-bottom: 1px dashed #ccc;
+      margin-bottom: 6%;
+      padding-bottom: 4%; }
+      #mypage section .box_history .list_detail li {
+        float: none;
+        margin: 0 0 1%; }
+        #mypage section .box_history .list_detail li:last-child {
+          margin: 0; }
+    #mypage section .box_history .list_item {
+      width: 100%;
+      float: none;
+      border-bottom: 1px dashed #ccc;
+      margin-bottom: 6%;
+      padding-bottom: 4%; }
+      #mypage section .box_history .list_item li {
+        margin-bottom: 6%;
+        display: flex;
+        align-items: stretch; }
+        #mypage section .box_history .list_item li figure {
+          width: 15%;
+          margin-right: 5%; }
+          #mypage section .box_history .list_item li figure + div {
+            width: -webkit-calc(100% - 20%);
+            width: calc(100% - 20%); }
+            #mypage section .box_history .list_item li figure + div p {
+              line-height: 1.4; }
+      #mypage section .box_history .list_item.wide {
+        border-bottom: none;
+        margin-bottom: 6%; }
+    #mypage section .box_history .btn_detail {
+      width: 100%;
+      float: none; }
+      #mypage section .box_history .btn_detail .button {
+        width: 60%;
+        margin: 0 auto;
+        padding: 3% 0;
+        font-size: 12px; }
+        #mypage section .box_history .btn_detail .button:hover {
+          background: #836a28; }
+    #mypage section .box_history .buyer th {
+      width: 25%;
+      padding: 2% 3%; }
+    #mypage section .box_history .buyer td {
+      padding: 2% 3%; }
+  #mypage section .btn_area {
+    width: 100%;
+    margin: 8% auto 0; }
+    #mypage section .btn_area .button {
+      width: 80%;
+      padding: 3% 0;
+      font-size: 13px; }
+      #mypage section .btn_area .button.left {
+        width: 49%; }
+      #mypage section .btn_area .button.right {
+        width: 49%; }
+      #mypage section .btn_area .button:hover {
+        background: #836a28; }
+      #mypage section .btn_area .button.link {
+        padding: 3.3% 0; } }
+/* *******************************************
+     ページャー
+******************************************* */
+.pager {
+  overflow: hidden; }
+  .pager ul.pageNav {
+    position: relative;
+    left: 50%;
+    float: left; }
+    .pager ul.pageNav li {
+      margin: 0 8px;
+      position: relative;
+      left: -50%;
+      float: left; }
+      .pager ul.pageNav li span {
+        display: block;
+        border: 1px solid #ccc;
+        background: #eee;
+        padding: 0.4em 0.9em;
+        font-size: 14px; }
+      .pager ul.pageNav li a {
+        border: 1px solid #ccc;
+        display: block;
+        padding: 0.4em 0.9em;
+        font-size: 14px;
+        text-decoration: none;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        .pager ul.pageNav li a:hover {
+          background: #eee;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          transition: .5s; }
+
+@media (max-width: 640px) {
+  .pager ul.pageNav li {
+    margin: 0 6px; }
+    .pager ul.pageNav li span {
+      padding: 0.1em 0.5em;
+      font-size: 12px; }
+    .pager ul.pageNav li a {
+      padding: 0.1em 0.5em;
+      font-size: 12px; }
+      .pager ul.pageNav li a:hover {
+        background: #fff; } }
+/* *******************************************
+     modal
+******************************************* */
+.modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #fff;
+  width: 600px;
+  padding: 40px 50px;
+  z-index: 10001;
+  font-size: 14px; }
+  .modal-content .mb {
+    margin-bottom: 15px; }
+  .modal-content textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px; }
+  .modal-content .btn a {
+    display: block;
+    background: rgba(26, 56, 130, 0.9);
+    width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .modal-content .btn a:hover {
+      background: rgba(26, 56, 130, 0.7);
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      transition: .5s; }
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 120%;
+  z-index: 10000; }
+
+.modal-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer; }
+
+@media (max-width: 640px) {
+  .modal-content {
+    width: 80%;
+    padding: 5% 5%;
+    font-size: 12px;
+    z-index: 11111; }
+    .modal-content .mb {
+      margin-bottom: 4%; }
+    .modal-content .btn a {
+      width: 100px;
+      padding: 5px 0;
+      font-size: 11px; }
+      .modal-content .btn a:hover {
+        background: rgba(26, 56, 130, 0.9); }
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 120%;
+    z-index: 10000; } }
+.videoWrap {
+  height: 0;
+  padding-bottom: 56.25%;
+  width: 100%;
+  position: relative; }
+
+.videoWrapEntry {
+  margin-top: 15px; }
+
+.videoWrap iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }

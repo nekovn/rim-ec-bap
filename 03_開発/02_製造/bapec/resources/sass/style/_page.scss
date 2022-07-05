@@ -1,0 +1,23 @@
+/**
+ * ステージング環境の背景色指定
+ */
+body.staging {
+  background-color:#fff;
+}
+header.staging {
+  background-color: #ffc0cb;
+  color: white;
+}
+.c-header .c-header-nav .c-header-nav-link {
+  color: white;
+}
+// .c-sidebar.staging {
+  // background-color: #2f4f4f;
+// }
+
+body.staging {
+  .footer-nav,
+  #header-search {
+    background-color:#ffc0cb;
+  }
+}

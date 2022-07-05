@@ -1,0 +1,14 @@
+@import '~@sass/style/template/simple.crud.page';
+
+.card-body {
+    padding-top: 0.5rem;
+}
+.goods-amount{
+    .title {
+        width:140px;
+    }
+    .amount {
+        width:80px;
+        text-align: right;
+    }
+}
